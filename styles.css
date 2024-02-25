@@ -1,0 +1,111 @@
+body {
+    background-color: #B7BABC;
+}
+
+#btns-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#number-btn-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 230px;
+}
+
+#operator-btn-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 78px;
+}
+
+.btns {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    width: 72px;
+    font-weight: 800;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    background-color: orange;
+    backface-visibility: hidden;
+    border: 1px solid transparent;
+    margin: 1px 1px 1px 1px;
+  }
+  
+  .btns {
+    border-color: transparent;
+    background-color: orange;
+    color: #000;
+    transition: transform 0.2s cubic-bezier(0.235, 0, 0.05, 0.95);
+  }
+    
+  .btns:hover {
+    transform: perspective(1px) scale3d(1.044, 1.044, 1) translateZ(0) !important;
+  }
+
+/* Text Container */
+#txt-container {
+    background-color: black;
+    width: 299px;
+    height: 80px;
+    margin: auto;
+    display: flex;
+    justify-content: end;
+}
+
+#txt-box {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 45px;
+    text-align: center;
+    margin: 0;
+    padding-top: 20px;
+    padding-right: 10px;
+}
+
+  /* Number Btns */
+  .num-btns {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    width: 72px;
+    font-weight: 800;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #82878E;
+    backface-visibility: hidden;
+    border: 1px solid transparent;
+    margin: 1px 1px 1px 1px;
+  }
+  
+  .num-btns {
+    border-color: transparent;
+    background-color: #82878E;
+    color: #000;
+    transition: transform 0.2s cubic-bezier(0.235, 0, 0.05, 0.95);
+  }
+    
+  .num-btns:hover {
+    transform: perspective(1px) scale3d(1.044, 1.044, 1) translateZ(0) !important;
+  }
+
+  #point-btn {
+    height: 80px;
+    width: 72px;
+  }
+
+  #clear-btn {
+    background-color: rgb(245, 245, 245);
+  }
+
+  #empty-btn {
+    background-color: #B7BABC;
+  }
