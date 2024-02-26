@@ -1,3 +1,6 @@
+// Title
+const titleText = document.querySelectorAll('.title-text');
+
 // Number Buttons
 const oneBtn = document.querySelector('#one-btn');
 const twoBtn = document.querySelector('#two-btn');
@@ -19,6 +22,7 @@ const multiplyBtn = document.querySelector('#multiply-btn');
 const divideBtn = document.querySelector('#divide-btn');
 const equalsBtn = document.querySelector('#equals-btn');
 const clearBtn = document.querySelector('#clear-btn');
+const plusMinusBtn = document.querySelector('#plus-minus-btn');
 const opBtns = document.querySelectorAll('.btns');
 
 const txtBox = document.querySelector('#txt-box');
@@ -34,6 +38,14 @@ let operator = '';
 let pastResult = false;
 
 // Button Click Function
+plusMinusBtn.addEventListener('click', () => {
+    if(displayValue.includes('-')){
+        displayValue.shift();
+    } else {
+        displayValue.unshift('-');
+    }
+});
+
 allNumBtns.forEach((btn) => {
     btn.addEventListener('click', () => {
         displayValue.push(btn.value);
@@ -200,6 +212,41 @@ const operate = (num1, num2) => {
         txtBox.textContent = "ERROR";
     }
 }
+
+// Title
+function randomColor() {
+    let letters = '0123456789ABCDEF';
+    let color = '#';
+    for (let x = 0; x < 6; x++) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+}
+
+function randomFont() {
+    let fontType = [ "Arial",
+    'Courier New',
+    'Lucida Handwriting',
+    'Times New Roman',
+    'American Typewriter',
+    'Didot',
+    'Snell Roundhand',
+    'Brush Script MT',
+    'Impact',
+    'Marker Felt',
+    'Chalkduster',
+    'Trattatello'];
+    let  num;
+    num = fontType[Math.floor(Math.random() * 10)];
+    return num;
+}
+
+titleText.forEach((letter) => {
+    letter.addEventListener('mouseover', () => {
+        // letter.style.color = randomColor();
+        letter.style.fontFamily = randomFont();
+    });
+});
 
 
 

@@ -2,6 +2,18 @@ body {
     background-color: #B7BABC;
 }
 
+.title-cont {
+  margin: auto;
+  width: fit-content;
+  padding-bottom: 10px;
+}
+
+.title-text {
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
 #btns-container {
     display: flex;
     justify-content: center;
