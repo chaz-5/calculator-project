@@ -65,10 +65,11 @@ body {
 #txt-container {
     background-color: black;
     width: 299px;
-    height: 80px;
+    min-height: 80px;
     margin: auto;
     display: flex;
     justify-content: end;
+    word-break: break-all;
 }
 
 #txt-box {
